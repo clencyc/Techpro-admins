@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Techpro-admins-app</string>
+    <string name="home">Home</string>
+    <string name="messages">Messages</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="saved_places">Saved places</string>
+    <string name="log_out">Log out</string>
+    <string name="read_more_about_us">Read more about us!</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="mama_junior">Mama Junior</string>
+    <string name="online">Online</string>
 </resources>
