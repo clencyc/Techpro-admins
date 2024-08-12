@@ -12,4 +12,10 @@
     <string name="mama_junior">Mama Junior</string>
     <string name="online">Online</string>
     <string name="enter_message">Enter Message</string>
+    <string name="new_orders">New Orders</string>
+    <string name="earnings">Earnings</string>
+    <string name="_12_00">$12.00</string>
+    <string name="_345_market_st_san_francisco_ca_94111">345 Market St, San Francisco, CA 94111</string>
+    <string name="location">Location</string>
+    <string name="work_to_do">Work to do:</string>
 </resources>
