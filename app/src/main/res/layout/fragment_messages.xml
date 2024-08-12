@@ -7,6 +7,7 @@
     tools:context=".navigation.Messages">
 
     <RelativeLayout
+        android:id="@+id/toplay"
         android:layout_width="match_parent"
         android:layout_height="@dimen/actionBarSize"
         android:background="@color/teal_200">
@@ -28,33 +29,32 @@
             android:src="@drawable/p2"
             android:layout_toEndOf="@+id/backBTN" />
 
-<!--        <LinearLayout-->
-<!--            android:id="@+id/Linear_one"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_toEndOf="@+id/profile_image"-->
-<!--            android:layout_marginStart="6dp"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:orientation="vertical"-->
-<!--            >-->
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="@string/mama_junior"-->
-<!--                android:fontFamily="sans-serif"-->
-<!--                android:textColor="#5E5858"-->
-<!--                android:textStyle="bold"-->
-<!--                android:textSize="20sp"-->
-<!--                />-->
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="@string/online"-->
-<!--                android:fontFamily="sans-serif-medium"-->
-<!--                android:textColor="@color/white"-->
-<!--                />-->
-<!--        </LinearLayout>-->
-
+        <LinearLayout
+            android:id="@+id/Linear_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/profile_image"
+            android:layout_marginStart="6dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mama_junior"
+                android:fontFamily="sans-serif"
+                android:textColor="#5E5858"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/online"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
         <ImageView
             android:id="@+id/more"
             android:layout_width="wrap_content"
@@ -64,5 +64,55 @@
             app:tint="@color/white"
             android:layout_marginEnd="10dp"
             />
+
+        <ImageView
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone_foreground"
+            android:layout_toLeftOf="@+id/more"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            app:tint="@color/white" />
+    </RelativeLayout>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomlay"
+        android:layout_below="@+id/toplay"
+        android:layout_margin="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/bottomlay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/enter_message"
+            android:fontFamily="sans-serif"
+            android:background="@drawable/message_bar"
+            android:paddingStart="16dp"
+            android:drawableStart="@drawable/emojii_foreground"
+            android:drawablePadding="6dp"
+            tools:ignore="RtlSymmetry" />
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/flot"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:src="@drawable/mic_foreground"-->
+<!--            android:backgroundTint="@color/teal_200"-->
+<!--            app:tint="@color/white"/>-->
+
+
     </RelativeLayout>
 </RelativeLayout>

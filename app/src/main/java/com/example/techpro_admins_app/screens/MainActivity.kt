@@ -17,18 +17,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        val home_Fragment=HomeFragment()
-        val profile_Fragment=ProfileFragment()
-        val message_Fragment=Messages()
+        val homeFragment=HomeFragment()
+        val profileFragment=ProfileFragment()
+        val messageFragment=Messages()
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-        setCurrentFragment(home_Fragment)
+        setCurrentFragment(homeFragment)
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.home->setCurrentFragment(home_Fragment)
-                R.id.profile->setCurrentFragment(profile_Fragment)
-                R.id.messages->setCurrentFragment(message_Fragment)
+                R.id.home->setCurrentFragment(homeFragment)
+                R.id.profile->setCurrentFragment(profileFragment)
+                R.id.messages->setCurrentFragment(messageFragment)
             }
             true
         }
