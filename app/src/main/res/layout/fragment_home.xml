@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:id="@+id/bottomSheetView"
     android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/bottomSheetView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
     <ImageButton
         android:id="@+id/slideDownButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/downward_arrow_foreground"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
         android:background="?android:attr/selectableItemBackgroundBorderless"
         android:padding="16dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp" />
+        android:src="@drawable/downward_arrow_foreground"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -80,7 +88,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Replace faulty capacitors on a malfunctioning circuit board using specialized soldering equipment." />
+                android:text="@string/replace_faulty_capacitors_on_a_malfunctioning_circuit_board_using_specialized_soldering_equipment" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -113,6 +121,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Accept Order (20s)" />
-
-</LinearLayout>
+        android:text="@string/accept_order_20s"
+        tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

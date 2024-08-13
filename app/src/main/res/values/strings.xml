@@ -18,4 +18,6 @@
     <string name="_345_market_st_san_francisco_ca_94111">345 Market St, San Francisco, CA 94111</string>
     <string name="location">Location</string>
     <string name="work_to_do">Work to do:</string>
+    <string name="replace_faulty_capacitors_on_a_malfunctioning_circuit_board_using_specialized_soldering_equipment">Replace faulty capacitors on a malfunctioning circuit board using specialized soldering equipment.</string>
+    <string name="accept_order_20s">Accept Order (20s)</string>
 </resources>
